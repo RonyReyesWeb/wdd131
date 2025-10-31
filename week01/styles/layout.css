@@ -1,0 +1,63 @@
+/* General Page Layout */
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+  grid-area: header;
+  background-color: #f48fb1;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Navigation Menu - use Flexbox */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #d81b60;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #ad1457;
+}
+
+/* Main and Aside */
+main {
+  grid-area: main;
+  background-color: #ffccbc;
+  padding: 2rem;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #fff59d;
+  padding: 2rem;
+}
+
+/* Footer Section */
+footer {
+  grid-area: footer;
+  background-color: #a5d6a7;
+  text-align: center;
+  padding: 1rem;
+}
