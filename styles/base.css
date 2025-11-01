@@ -35,6 +35,11 @@ nav a {
     transition: color 0.3s, border-bottom 0.3s;
 }
 
+nav a:hover {
+    border-bottom: 2px solid #ffffff;
+    color: #00331a;         
+}
+
 /* Main layout */
 main {
     max-width: 900px;
