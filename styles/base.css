@@ -91,3 +91,10 @@ footer {
     color: white; 
     padding: 1rem;
 }
+
+#currentyear,
+#lastModified {
+    color: white; 
+    font-weight: normal;     
+    font-size: 1rem; 
+}
