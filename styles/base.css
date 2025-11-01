@@ -37,7 +37,7 @@ nav a {
 
 nav a:hover {
     border-bottom: 2px solid #fff;
-    color: #66ff8a; 
+    color: #0b6e4f;
 }
 
 /* Main layout */
@@ -70,7 +70,8 @@ h1, h2 {
 /* Footer styling */
 footer {
     text-align: center;
-    background-color: #0b6e4f;
+    color: #0b6e4f;
+    text-decoration: none;
     color: white;
     padding: 1rem;
 }
