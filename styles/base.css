@@ -3,12 +3,12 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #f5f5f5;
-    color: #333;
+    color: #333; 
 }
 
 /* Header styling */
 header {
-    background-color: #0b6e4f;
+    background-color: #0b6e4f; 
     color: white;
     text-align: center;
     padding: 1rem;
@@ -37,7 +37,7 @@ nav a {
 
 nav a:hover {
     border-bottom: 2px solid #fff;
-    color: #0b6e4f;
+    color: #c0ffd0; 
 }
 
 /* Main layout */
@@ -49,6 +49,7 @@ main {
     gap: 1.5rem;
 }
 
+/* Cards */
 .card {
     background-color: white;
     border-radius: 10px;
@@ -56,6 +57,7 @@ main {
     padding: 1rem;
 }
 
+/* Images inside cards */
 .card img {
     max-width: 100%;
     border-radius: 10px;
@@ -63,15 +65,29 @@ main {
     margin-bottom: 1rem;
 }
 
+/* Headings */
 h1, h2 {
     color: #0b6e4f;
+}
+
+/* Links inside main content and cards */
+main a,
+.card a,
+footer a {
+    color: #0b6e4f;
+    text-decoration: underline;
+}
+
+main a:hover,
+.card a:hover,
+footer a:hover {
+    color: #094d37; 
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    color: #0b6e4f;
-    text-decoration: none;
-    color: white;
+    background-color: #0b6e4f; 
+    color: white; 
     padding: 1rem;
 }
