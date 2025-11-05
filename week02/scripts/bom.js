@@ -1,29 +1,42 @@
-// Step 1: Get references to elements
+// Step 1: Get references to DOM elements
 const input = document.querySelector('#favchap');
 const button = document.querySelector('#addButton');
 const list = document.querySelector('#chaptersList');
 
-// Step 2: Add event listener to the button
-button.addEventListener('click', () => {
-  if (input.value.trim() === "") return; // Prevent empty entries
+// Step 2: Add click event listener to Add Chapter button
+button.addEventListener('click', function() {
 
-  // Step 3: Create a new li and delete button
-  const li = document.createElement('li');
-  li.textContent = input.value;
+  // Step 3: Check input is not empty
+  if (input.value.trim() !== '') {
 
-  const deleteButton = document.createElement('button');
-  deleteButton.textContent = '❌';
-  deleteButton.setAttribute('aria-label', `Remove ${input.value}`);
+    // Step 4: Create a new li element for the chapter
+    const li = document.createElement('li');
+    li.textContent = input.value; // Populate with input text
 
-  // Step 4: Append delete button to li, li to list
-  li.append(deleteButton);
-  list.append(li);
+    // Step 5: Create a delete button
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = '❌';
+    deleteButton.setAttribute('aria-label', `Remove ${input.value}`); // Accessibility
 
-  // Step 5: Clear input for next entry
-  input.value = '';
+    // Step 6: Append delete button to li
+    li.append(deleteButton);
 
-  // Step 6: Add event listener to delete the li
-  deleteButton.addEventListener('click', () => {
-    li.remove();
-  });
+    // Step 7: Append li to the list
+    list.append(li);
+
+    // Step 8: Add event listener to delete button
+    deleteButton.addEventListener('click', function () {
+      list.removeChild(li); // Remove the li
+      input.focus(); // Return focus to input
+    });
+
+    // Step 9: Clear input field and set focus
+    input.value = '';
+    input.focus();
+
+  } else {
+    // Optional else branch if input is blank
+    alert('Please enter a chapter!');
+    input.focus();
+  }
 });
