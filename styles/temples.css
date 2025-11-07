@@ -43,13 +43,15 @@ header h1 {
 #nav-menu a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+
 #nav-menu a:hover {
-  background-color: #0066cc;
-  border-radius: 4px;
-  padding-left: 0.5rem;
+  background-color: #0066cc; /* hover color */
+  color: #fff;
 }
 
 /* Main Content */
