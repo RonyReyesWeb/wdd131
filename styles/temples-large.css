@@ -1,15 +1,22 @@
+@media screen and (min-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (min-width: 768px) {
   #nav-menu {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin-top: 0;
   }
 
   #hamburger {
-    display: none; 
+    display: none;
   }
 
   .gallery {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
   }
 }
