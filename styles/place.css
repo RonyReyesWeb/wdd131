@@ -1,0 +1,75 @@
+:root {
+  --primary: #006b3f;   /* Guatemala flag green */
+  --secondary: #ffffff;
+  --accent: #ce1126;
+  --text-dark: #222;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+}
+
+/* HERO */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MAIN LAYOUT */
+main {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+/* SECTIONS */
+section {
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+/* WEATHER pseudo-element icon in large view */
+.weather h2::after {
+  content: "⛅";
+  margin-left: .5rem;
+  display: none;
+  font-size: 1.4rem;
+}
+
+/* MOBILE SVG ICON */
+.weather-icon-mobile {
+  width: 60px;
+  display: block;
+}
+
+/* MEDIA QUERY FOR WIDE VIEW */
+@media (min-width: 700px) {
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Hide mobile SVG icon */
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  /* Show pseudo-element icon for wide view */
+  .weather h2::after {
+    display: inline;
+  }
+}
