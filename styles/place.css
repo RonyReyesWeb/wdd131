@@ -1,75 +1,89 @@
 :root {
-  --primary: #006b3f;   /* Guatemala flag green */
-  --secondary: #ffffff;
-  --accent: #ce1126;
-  --text-dark: #222;
+    --primary: #006b3f;
+    --secondary: #ffffff;
+    --accent: #ce1126;
+    --text-dark: #222;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: var(--text-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    background: #f7f7f7;
 }
 
-/* HEADER */
 header {
-  text-align: center;
-  padding: 1rem;
-  background: var(--primary);
-  color: white;
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
 }
 
-/* HERO */
-.Guate img {
-  width: 100%;
-  height: auto;
-  display: block;
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* MAIN LAYOUT */
 main {
-  padding: 1rem;
-  display: grid;
-  gap: 1rem;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    position: relative;
+    z-index: 5;
 }
 
-/* SECTIONS */
 section {
-  background: var(--secondary);
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #ddd;
+    background: var(--secondary);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
 }
 
-/* WEATHER pseudo-element icon in large view */
 .weather h2::after {
-  content: "⛅";
-  margin-left: .5rem;
-  display: none;
-  font-size: 1.4rem;
-}
-
-/* MOBILE SVG ICON */
-.weather-icon-mobile {
-  width: 60px;
-  display: block;
-}
-
-/* MEDIA QUERY FOR WIDE VIEW */
-@media (min-width: 700px) {
-
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Hide mobile SVG icon */
-  .weather-icon-mobile {
+    content: "⛅";
+    margin-left: .5rem;
     display: none;
-  }
+    font-size: 1.4rem;
+}
 
-  /* Show pseudo-element icon for wide view */
-  .weather h2::after {
-    display: inline;
-  }
+.weather-icon-mobile {
+    width: 60px;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+@media (min-width: 900px) {
+
+    .hero {
+        position: relative;
+    }
+
+    main {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather h2::after {
+        display: inline;
+    }
+
+    body {
+        padding-bottom: 300px;
+    }
 }
