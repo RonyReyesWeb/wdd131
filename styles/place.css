@@ -15,13 +15,6 @@ header {
   font-weight: bold;
 }
 
-header::after {
-  content: "";
-  display: block;
-  height: 8px;
-  background: #006b3f;
-}
-
 .hero img {
   width: 100%;
   height: auto;
