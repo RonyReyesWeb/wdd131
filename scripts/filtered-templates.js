@@ -58,17 +58,13 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-
-  // ---------------------------
-  // REQUIRED: 3 More temples
-  // ---------------------------
   {
     templeName: "Guatemala City Guatemala",
     location: "Guatemala City, Guatemala",
     dedicated: "1984, December, 14",
     area: 11600,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/guatemala-city-guatemala-temple/guatemala-city-guatemala-temple-6415-main.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/guatemala-city-guatemala-temple/guatemala-city-guatemala-temple-6415-main.jpg"
   },
   {
     templeName: "Calgary Alberta",
@@ -76,7 +72,7 @@ const temples = [
     dedicated: "2012, October, 28",
     area: 33000,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/calgary-alberta-temple/calgary-alberta-temple-13199-main.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/calgary-alberta-temple/calgary-alberta-temple-13199-main.jpg"
   },
   {
     templeName: "Rome Italy",
@@ -84,7 +80,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 41000,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
   }
 ];
 
@@ -93,15 +89,19 @@ const temples = [
 // ---------------------------
 function displayTemples(list) {
   const container = document.querySelector("#temple-gallery");
-  container.innerHTML = ""; // Clear before loading filter
+  container.innerHTML = ""; 
 
   list.forEach((temple) => {
     const card = document.createElement("figure");
 
     card.innerHTML = `
-      <img src="${temple.imageUrl}" 
-           alt="${temple.templeName}" 
-           loading="lazy">
+      <img 
+        src="${temple.imageUrl}" 
+        alt="${temple.templeName} Temple in ${temple.location}" 
+        loading="lazy"
+        width="400"
+        height="250"
+      >
 
       <figcaption>
         <h3>${temple.templeName}</h3>
