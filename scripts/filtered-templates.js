@@ -68,7 +68,7 @@ const temples = [
     dedicated: "1984, December, 14",
     area: 11600,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guatemala-city-guatemala/400x250/guatemala-city-guatemala-temple-lds-1018940-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/guatemala-city-guatemala-temple/guatemala-city-guatemala-temple-6415-main.jpg"
   },
   {
     templeName: "Calgary Alberta",
@@ -76,7 +76,7 @@ const temples = [
     dedicated: "2012, October, 28",
     area: 33000,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/calgary-alberta/400x250/calgary-alberta-temple-lds-1162934-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/calgary-alberta-temple/calgary-alberta-temple-13199-main.jpg"
   },
   {
     templeName: "Rome Italy",
@@ -84,7 +84,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 41000,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-lds-1754194-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
   }
 ];
 
