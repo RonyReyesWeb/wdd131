@@ -8,8 +8,9 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5087-main.jpg"
   },
+  
   {
     templeName: "Manti Utah",
     location: "Manti, Utah, United States",
