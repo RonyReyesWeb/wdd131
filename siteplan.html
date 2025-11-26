@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="A digital community hub for Guatemalan software developers to learn, share projects, find tutorials, and connect with peers.">
+    <meta name="author" content="Rony Daniel Reyes Lopez">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Plan - Guatemalan Developer Community Hub</title>
@@ -14,61 +19,135 @@
         <h1>Guatemalan Developer Community Hub — Site Plan</h1>
     </header>
 
-    <section>
-        <h2>Site Name</h2>
-        <p><strong>Guatemalan Developer Community Hub</strong></p>
-        <p>
-            I chose this name because it represents a central place where software developers in Guatemala can
-            connect, learn, and collaborate. The word “Hub” communicates community, activity, and shared growth.
-        </p>
-    </section>
+    <main>
+        <!-- SITE NAME -->
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Guatemalan Developer Community Hub</strong></p>
+            <p>
+                I chose this name because it represents a central place where software developers in Guatemala can
+                connect, learn, and collaborate. The word “Hub” communicates community, activity, and shared growth.
+            </p>
+        </section>
 
-    <section>
-        <h2>Site Purpose</h2>
-        <p>
-            The purpose of this website is to create a digital community platform for software developers in
-            Guatemala. The site will offer tutorials, coding tips, articles, job opportunities, and a discussion
-            forum where members can ask questions, share knowledge, and support each other.
-        </p>
-    </section>
+        <!-- SITE PURPOSE -->
+        <section>
+            <h2>Site Purpose</h2>
+            <p>
+                The purpose of this website is to create a digital community platform for software developers in
+                Guatemala. The site will offer tutorials, coding tips, articles, job opportunities, and a discussion
+                forum where members can ask questions, share knowledge, and support each other.
+            </p>
+        </section>
 
-    <section>
-        <h2>Scenarios</h2>
-        <ul>
-            <li>Where can I find tutorials to improve my skills in web development, Python, or mobile development?</li>
-            <li>How can I connect with other Guatemalan developers or find a local mentor?</li>
-            <li>Are there any job opportunities or freelance projects available for developers in Guatemala?</li>
-            <li>Where can I share my own projects or ask for help with debugging?</li>
-        </ul>
-    </section>
+        <!-- SCENARIOS -->
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>Where can I find tutorials to improve my skills in web development, Python, or mobile development?
+                </li>
+                <li>How can I connect with other Guatemalan developers or find a local mentor?</li>
+                <li>Are there any job opportunities or freelance projects available for developers in Guatemala?</li>
+                <li>Where can I share my own projects or ask for help with debugging?</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Color Schema</h2>
-        <p><strong>Primary Color:</strong> #0B5ED7 — Used for headings and section titles.</p>
-        <p><strong>Accent Color:</strong> #198754 — Used for borders, highlights, and wireframe placeholders.</p>
-    </section>
+        <!-- COLOR SCHEMA -->
+        <section>
+            <h2>Color Schema</h2>
+            <p><strong>Primary Color:</strong> #0B5ED7 — Used for headings and section titles.</p>
+            <p><strong>Accent Color:</strong> #198754 — Used for borders, highlights, and wireframe placeholders.</p>
 
-    <section>
-        <h2>Typography</h2>
-        <p>
-            <strong>Main Font:</strong> Poppins<br>
-            Applied to: headings, paragraphs, lists, and all content.
-        </p>
-    </section>
+            <!-- Color Samples -->
+            <div class="color-samples">
+                <div class="sample primary"></div>
+                <div class="sample accent"></div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Wireframes</h2>
+        <!-- TYPOGRAPHY -->
+        <section>
+            <h2>Typography</h2>
+            <p>
+                <strong>Main Font:</strong> Poppins<br>
+                Applied to: headings, paragraphs, lists, and all content.
+            </p>
+        </section>
 
-        <h3>Mobile View (Home Page)</h3>
-        <div class="wireframe">
-            <p>Mobile Wireframe Placeholder</p>
-        </div>
-dd
-        <h3>Desktop View (Home Page)</h3>
-        <div class="wireframe">
-            <p>Desktop Wireframe Placeholder</p>
-        </div>
-    </section>
+        <!-- WIREFRAMES -->
+        <section>
+            <h2>Wireframes</h2>
+
+            <!-- Desktop Wireframe -->
+            <h3>Desktop View (Home Page)</h3>
+            <div class="wireframe desktop-wireframe">
+                <div class="wire-header">Logo + Site Name</div>
+
+                <div class="wire-nav">
+                    <div class="wire-button">Home</div>
+                    <div class="wire-button">Tutorials</div>
+                    <div class="wire-button">Forum</div>
+                    <div class="wire-button">Jobs</div>
+                    <div class="wire-button">About</div>
+                </div>
+
+                <div class="wire-main">
+                    <div class="wire-sidebar">
+                        <div class="placeholder-card">User Profile / Login</div>
+                        <div class="placeholder-card">Popular Tutorials</div>
+                        <div class="placeholder-card">Upcoming Events</div>
+                    </div>
+                    <div class="wire-content">
+                        <div class="placeholder-card">Featured Tutorial</div>
+                        <div class="placeholder-card">Latest Articles</div>
+                        <div class="placeholder-card">Recent Forum Posts</div>
+                        <div class="placeholder-card">Job Opportunities</div>
+                    </div>
+                </div>
+
+                <div class="wire-footer">Contact Info + Social Links</div>
+            </div>
+            <!-- Mobile Wireframe -->
+            <h3>Mobile View (Home Page)</h3>
+            <div class="wireframe mobile-wireframe">
+                <div class="wire-header">Logo + Site Name</div>
+
+                <div class="wire-nav">
+                    <!-- Hamburger Menu -->
+                    <button class="hamburger">&#9776;</button>
+                    <div class="nav-links">
+                        <div class="wire-button">Home</div>
+                        <div class="wire-button">Tutorials</div>
+                        <div class="wire-button">Forum</div>
+                        <div class="wire-button">Jobs</div>
+                    </div>
+                </div>
+
+                <div class="wire-content">
+                    <div class="placeholder-card">Featured Tutorial</div>
+                    <div class="placeholder-card">Latest Articles</div>
+                    <div class="placeholder-card">Recent Forum Posts</div>
+                    <div class="placeholder-card">Job Opportunities</div>
+                </div>
+
+                <div class="wire-footer">Contact Info + Social Links</div>
+            </div>
+
+        </section>
+
+        <!-- Add this script at the end of your body -->
+        <script>
+            const hamburger = document.querySelector('.mobile-wireframe .hamburger');
+            const navLinks = document.querySelector('.mobile-wireframe .nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+
+
+    </main>
 
 </body>
+
 </html>
