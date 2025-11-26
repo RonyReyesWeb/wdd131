@@ -171,7 +171,7 @@ li {
 
 /* Individual nav buttons in mobile view */
 .mobile-wireframe .nav-links .wire-button {
-    background-color: #198754; /* accent color */
+    background-color: #198754; 
     color: white;
     padding: 8px;
     text-align: center;
