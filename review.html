@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>Review Submitted</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
 </head>
 
 <body>
@@ -21,21 +23,19 @@
     <p id="count">0</p>
 </main>
 
-<footer>
-    <p>WDD 131 – Product Review Confirmation</p>
-</footer>
+    <footer>
+        <p>&copy; <span id="year"></span> Rony Daniel Reyes Lopez</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
 
 <script>
-    // get current count
     let count = Number(localStorage.getItem("reviewCount")) || 0;
 
-    // increase count
     count++;
 
-    // save
     localStorage.setItem("reviewCount", count);
 
-    // display
     document.getElementById("count").textContent = count;
 </script>
 
