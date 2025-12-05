@@ -10,7 +10,7 @@ body {
 }
 
 header, footer {
-  background: #0B5ED7;
+  background: #0A3D91;
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -23,7 +23,7 @@ header h1 { margin: 0; font-size: 1.4rem; letter-spacing: 0.2px; }
   justify-content:center;
   align-items:center;
   padding: .6rem;
-  background: #0B5ED7;
+  background: #0A3D91;
   flex-wrap:wrap;
 }
 
@@ -35,7 +35,6 @@ header h1 { margin: 0; font-size: 1.4rem; letter-spacing: 0.2px; }
   font-weight: 600;
   background: transparent;
 }
-.main-nav a[aria-current="page"] { outline: 2px solid #198754; background: rgba(255,255,255,0.06); }
 
 .container {
   max-width: 980px;
@@ -75,7 +74,7 @@ input[type="text"], select, textarea {
   font-size: .95rem;
 }
 button {
-  background: #198754; color: white; border: none; padding: .6rem .9rem; border-radius:6px; font-weight:700;
+  background: #0F5C3A; color: white; border: none; padding: .6rem .9rem; border-radius:6px; font-weight:700;
 }
 
 .row { display:flex; gap: .6rem; align-items: center; }
@@ -114,7 +113,7 @@ a:focus, button:focus, input:focus, textarea:focus {
 @media (max-width: 900px) {
   #nav-toggle {
     display: inline-block; /* show button on small screens */
-    background: #198754;
+    background: #0F5C3A;
     color: white;
     border: none;
     padding: .5rem .8rem;
