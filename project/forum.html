@@ -15,10 +15,11 @@
         <h1>Forum</h1>
     </header>
 
-    <nav class="main-nav" aria-label="Main navigation">
-        <a href="siteplan.html">Home</a>
+    <nav id="primary-nav" class="main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="tutorials.html">Tutorials</a>
-        <a href="forum.html" aria-current="page">Forum</a>
+        <a href="forum.html">Forum</a>
         <a href="about.html">About</a>
         <a href="reference.html">References</a>
     </nav>
@@ -39,7 +40,7 @@
         <section aria-labelledby="recent-posts">
             <h2 id="recent-posts">Recent Posts</h2>
             <div id="forum-list" aria-live="polite"></div>
-            <p style="font-size:.9rem;color:#555">Messages are stored in your browser (localStorage) so you'll see them
+            <p>Messages are stored in your browser (localStorage) so you'll see them
                 next time on the same browser/device.</p>
         </section>
     </main>
