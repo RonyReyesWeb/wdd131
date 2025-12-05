@@ -51,7 +51,7 @@ header h1 { margin: 0; font-size: 1.4rem; letter-spacing: 0.2px; }
 }
 
 .hero .intro { padding: 1.25rem; background: #fff; border-radius: 8px; border: 1px solid #e6eef8; }
-.hero img { width:100%; border-radius:8px; display:block; }
+.hero img { margin-bottom: 1rem; width:100%; border-radius:8px; display:block; }
 
 section {
   background: #fff;
