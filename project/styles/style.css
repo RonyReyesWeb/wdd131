@@ -1,0 +1,108 @@
+/* --------------------------- */
+/* Main Typography & Body Setup */
+/* --------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafb; /* Light neutral background */
+    color: #333; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #0B5ED7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h1, h2, h3 {
+    color: #0B5ED7;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    background-color: #0B5ED7;
+    padding: 10px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.main-nav a:hover {
+    background-color: #198754;
+}
+
+/* Sections */
+section {
+    background-color: #fff;
+    border: 2px solid #198754;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    background-color: #198754;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Tutorial Cards */
+.tutorial-card {
+    border: 2px solid #198754;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Forum Posts */
+.forum-post {
+    border: 1px solid #0B5ED7;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Forms */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Footer Links */
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+    }
+}
