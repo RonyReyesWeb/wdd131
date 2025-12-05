@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About - Guatemalan Developer Community Hub</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>About</h1>
     </header>
 
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="tutorials.html">Tutorials</a>
         <a href="forum.html">Forum</a>
-        <a href="about.html">About</a>
+        <a href="about.html" aria-current="page">About</a>
         <a href="reference.html">References</a>
     </nav>
 
-    <main>
-        <section>
-            <h2>About the Community Hub</h2>
-            <p>
-                The Guatemalan Developer Community Hub is a digital platform created to connect software developers 
-                across Guatemala. Our goal is to provide resources, tutorials, and a space for collaboration and networking.
-            </p>
-            <p>
-                Developers can find learning resources, share their projects, ask questions in the forum, 
-                and explore job opportunities in the tech industry.
-            </p>
-            <img src="images/about-community.jpg" alt="Developers collaborating" loading="lazy" style="width:100%;border-radius:8px;">
+    <main class="container">
+        <section aria-labelledby="about-hub">
+            <h2 id="about-hub">About the Community Hub</h2>
+            <p>This platform connects Guatemalan software developers to learn, collaborate, and find opportunities. It
+                focuses on accessible, community-driven learning and peer support.</p>
+            <img src="images/about-community.jpg" alt="Community of developers" loading="lazy"
+                style="width:100%;border-radius:8px;margin-top:.5rem;">
         </section>
 
-        <section>
-            <h2>Mission</h2>
-            <p>To empower Guatemalan developers through knowledge sharing, mentorship, and community collaboration.</p>
+        <section aria-labelledby="mission">
+            <h2 id="mission">Mission</h2>
+            <p>To empower developers in Guatemala through shared resources, mentorship, and opportunities.</p>
         </section>
 
-        <section>
-            <h2>Vision</h2>
-            <p>To build a strong, supportive, and active network of software developers in Guatemala that fosters innovation and professional growth.</p>
+        <section aria-labelledby="vision">
+            <h2 id="vision">Vision</h2>
+            <p>To build a sustainable, active network that improves skills and access to jobs and projects.</p>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 Guatemalan Developer Community Hub | <a href="reference.html">References</a></p>
+        <p>&copy; <span id="year"></span> Guatemalan Developer Community Hub</p>
+        <p>Last Modified: <span id="lastModified"></span> Rony Reyes</p>
+    </footer>
+</body>
+
+</html>

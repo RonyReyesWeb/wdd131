@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A digital community hub for Guatemalan software developers to learn, share projects, find tutorials, and connect with peers.">
+    <meta name="author" content="Rony Daniel Reyes Lopez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Guatemalan Developer Community Hub</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Guatemalan Developer Community Hub</h1>
     </header>
 
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
+    <nav class="main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-controls="primary-nav" aria-expanded="false" style="display:none">Menu</button>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="tutorials.html">Tutorials</a>
         <a href="forum.html">Forum</a>
         <a href="about.html">About</a>
         <a href="reference.html">References</a>
     </nav>
 
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>This community hub is designed for Guatemalan software developers to learn, share projects, and connect with peers.</p>
-            <img src="images/dev-community.jpg" alt="Developers collaborating" loading="lazy" style="width:100%;border-radius:8px;">
+    <main class="container" id="main">
+        <div class="hero" role="region" aria-labelledby="hero-heading">
+            <div class="intro">
+                <h2 id="hero-heading">Welcome — Guatemalan Developer Community</h2>
+                <p>Resources, tutorials, and a friendly forum for Guatemalan devs to learn, share projects, and network.
+                </p>
+                <p><strong>Get started:</strong> Explore tutorials or post a question in the forum.</p>
+            </div>
+
+            <div>
+                <img src="images/hero.jpg" alt="Developers collaborating" loading="lazy">
+            </div>
+        </div>
+
+        <section aria-labelledby="featured-tutorials">
+            <h2 id="featured-tutorials">Featured Tutorials</h2>
+            <div id="tutorial-list" aria-live="polite"></div>
+            <p style="font-size:.9rem;color:#555">Add a tutorial on the Tutorials page to see it appear here (data saved
+                in your browser).</p>
         </section>
 
-        <section>
-            <h2>Featured Tutorials</h2>
-            <div id="tutorial-list"></div>
-        </section>
-
-        <section>
-            <h2>Join the Forum</h2>
-            <p>Share your knowledge and ask questions in our community forum.</p>
+        <section aria-labelledby="join-forum">
+            <h2 id="join-forum">Join the Forum</h2>
+            <p>Share a question or help others — visit the <a href="forum.html">Forum</a> to participate.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Guatemalan Developer Community Hub | <a href="reference.html">References</a></p>
+        <p>&copy; <span id="year"></span> Guatemalan Developer Community Hub</p>
+        <p>Last Modified: <span id="lastModified"></span> Rony Reyes</p>
     </footer>
-
-    <script src="scripts/main.js" defer></script>
 </body>
+
 </html>

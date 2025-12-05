@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tutorials - Guatemalan Developer Community Hub</title>
+    <script src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
+
 <body>
     <header>
         <h1>Tutorials</h1>
     </header>
 
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="tutorials.html">Tutorials</a>
+        <a href="tutorials.html" aria-current="page">Tutorials</a>
         <a href="forum.html">Forum</a>
         <a href="about.html">About</a>
         <a href="reference.html">References</a>
     </nav>
 
-    <main>
-        <section>
-            <h2>Add a Tutorial</h2>
-            <form id="tutorial-form">
-                <input type="text" id="title" placeholder="Tutorial Title" required>
-                <select id="level" required>
-                    <option value="">Select Level</option>
-                    <option value="Beginner">Beginner</option>
-                    <option value="Intermediate">Intermediate</option>
-                    <option value="Advanced">Advanced</option>
-                </select>
-                <button type="submit">Add</button>
+    <main class="container">
+        <section aria-labelledby="add-tutorial">
+            <h2 id="add-tutorial">Add a Tutorial</h2>
+            <form id="tutorial-form" aria-describedby="tutorial-help">
+                <div>
+                    <label for="title">Title</label>
+                    <input id="title" name="title" type="text" required placeholder="e.g. JavaScript Events">
+                </div>
+                <div>
+                    <label for="level">Level</label>
+                    <select id="level" name="level" required>
+                        <option value="">Select level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="author">Author (optional)</label>
+                    <input id="author" name="author" type="text" placeholder="Your name">
+                </div>
+                <div>
+                    <button type="submit">Add Tutorial</button>
+                </div>
+                <p id="tutorial-help" style="font-size:.9rem;color:#555">This form validates required fields and stores
+                    tutorials in your browser's localStorage.</p>
             </form>
         </section>
 
-        <section>
-            <h2>All Tutorials</h2>
-            <div id="tutorial-list"></div>
+        <section aria-labelledby="all-tutorials">
+            <h2 id="all-tutorials">All Tutorials</h2>
+            <div id="tutorial-list" aria-live="polite"></div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Guatemalan Developer Community Hub | <a href="reference.html">References</a></p>
+        <p>&copy; <span id="year"></span> Guatemalan Developer Community Hub</p>
+        <p>Last Modified: <span id="lastModified"></span> Rony Reyes</p>
     </footer>
 
-    <script src="scripts/main.js" defer></script>
 </body>
+
 </html>
