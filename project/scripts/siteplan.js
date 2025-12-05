@@ -110,10 +110,14 @@ function tutorialListHandler(e) {
 
 function initMobileNavToggle() {
   const btn = document.querySelector('#nav-toggle');
-  const nav = document.querySelector('.main-nav');
+  const nav = document.querySelector('#primary-nav');
   if (!btn || !nav) return;
-  btn.addEventListener('click', () => nav.classList.toggle('open'));
+
+  btn.addEventListener('click', () => {
+    nav.classList.toggle('open'); 
+  });
 }
+
 
 function init() {
   displayTutorials();

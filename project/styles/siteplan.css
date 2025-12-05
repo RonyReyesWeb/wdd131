@@ -92,8 +92,45 @@ a:focus, button:focus, input:focus, textarea:focus {
     display: none;
 }
 
+#nav-links {
+  display: flex;
+  gap: .5rem;
+}
+
+#nav-toggle {
+  display: none; /* default hidden on large screens */
+}
+
+/* Default (large screens) */
+#nav-toggle {
+  display: none; /* hide toggle button on desktop */
+}
+
+#primary-nav a {
+  display: inline-block;
+}
+
+/* Mobile / small screens */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
-  .container { padding: 0 .75rem; }
-  .main-nav { gap:.35rem; }
+  #nav-toggle {
+    display: inline-block; /* show button on small screens */
+    background: #198754;
+    color: white;
+    border: none;
+    padding: .5rem .8rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  #primary-nav a {
+    display: none; /* hide links by default on small screens */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #primary-nav.open a {
+    display: block; /* show links when nav is toggled */
+    margin: .3rem 0;
+  }
 }
